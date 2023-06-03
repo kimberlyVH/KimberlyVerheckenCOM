@@ -728,13 +728,59 @@ textarea {
     font-size: var(--size-sm-header);
 
 }
-
 .more-info {
-    display: none;
+    width: 95%;
+    margin: auto;
+    height: fit-content;
+    padding: var(--padding-txt);
 }
 
-@media screen and (min-width: 900px) {
+.more-info h3 {
+    color: var(--accent-color-pink);
+    font-family: var(--font-nav);
+    font-size: 2rem;
+    width: fit-content;
+    margin: 0;
+}
 
+.more-info p {
+    width: fit-content;
+    font-size: var(--size-sm-txt);
+    color: var(--accent-color-pink);
+    text-align: center;
+    margin: 2rem auto 2rem auto;
+}
+
+.qr-frame {
+    width: fit-content;
+    border: solid 1px var(--general-font-color);
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.qr-frame p {
+    font-family: var(--font-h1);
+    color: var(--subheader-color);
+    font-size: 1.5rem;
+    margin: 1rem auto auto auto;
+    text-align: center;
+}
+
+.call-btn {
+    display: block;
+    width: 150px;
+    border: 4px double var(--subheader-color);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 1rem;
+    margin: auto auto 1rem auto;
+}
+.call-btn img {
+    width: 100%;
+}
+@media screen and (min-width: 900px) {
     .form-section {
         width: 70%;
     }
@@ -748,52 +794,12 @@ textarea {
     }
 
     #qr {
-        width: 200px;
+        width: 100%;
     }
 
     .more-info {
-
-        display: block;
-        margin: auto;
-        height: fit-content;
-        width: fit-content;
-        padding: var(--padding-txt);
-
-    }
-
-    .more-info h3 {
-        color: var(--accent-color-pink);
-        font-family: var(--font-nav);
-        font-size: 2rem;
-        width: fit-content;
-        margin: 0;
-    }
-
-    .more-info p {
-        width: fit-content;
-        font-size: var(--size-sm-txt);
-        color: var(--accent-color-pink);
-        text-align: center;
-        margin: 2rem auto 2rem auto;
-    }
-
-    .qr-frame {
-        width: fit-content;
-        border: solid 1px var(--general-font-color);
-        padding: 1rem;
-        justify-content: space-between;
-        align-items: center;
-        border-top-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-    }
-
-    .qr-frame p {
-        font-family: var(--font-h1);
-        color: var(--subheader-color);
-        font-size: 1.5rem;
-        margin: 1rem auto auto auto;
-        text-align: center;
-    }
+        width: 20%;
+    }   
 }
 
 /*-------------------------------------end contact--------------------------------------*/
@@ -842,6 +848,7 @@ footer a {
 #footerlist2 {
     margin: 0 0 auto auto;
 }
+
 #footerlist2 li {
     left: -20px;
 }
@@ -852,15 +859,18 @@ footer a {
     margin: auto auto auto auto;
     text-align: center;
 }
+
 #footerlist4 a {
     position: relative;
     left: -50px;
 }
+
 #footerlist4 .footer-txt {
     width: 100px;
-    top:-8px;
+    top: -8px;
     left: 30px;
 }
+
 footer li {
     margin: auto auto 1rem auto;
     position: relative;

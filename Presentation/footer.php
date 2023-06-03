@@ -39,7 +39,14 @@ namespace presentation;
   <div id="footerlist3">
     <h3>Wanna get in touch?</h3>
     <ul>
-      <li><a href="tel:32494163784">+32 494/16.37.84</a></li>
+      <?php
+      $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
+      if ($isMob) {
+      ?><?= '<li><a href="tel:+32494163784">+32 494/16.37.84</a></li>';
+      } else {
+        ?><?= '<li>+32 494/16.37.84</li>';
+      }
+        ?>
       <li><a href="mailto:contact@kimberlyverhecken.com">contact@kimberlyverhecken.com</a></li>
     </ul>
   </div>
@@ -55,4 +62,5 @@ namespace presentation;
 
 </footer>
 </body>
+
 </html>

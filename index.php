@@ -70,9 +70,7 @@ if (isset($_POST["btnSend"])) {
 
             $succes = "Thank you, your email has been send successfully!,<br>
             You will recieve a confirmation email immediately.<br>";
-
-            header("location: thankYou.php");
-            exit();
+        
         } catch (InvalidEmailAddressException $e) {
             $error .= "Given Email-addres is unvalid, please try again.<br>";
         } catch (FailedEmailException $e) {

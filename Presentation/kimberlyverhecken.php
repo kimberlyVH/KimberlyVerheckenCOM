@@ -183,7 +183,7 @@ include("header.php");
 
   <!--------------start projects------->
   <div id="projects" class="scroll-page page-margin">
-  
+
     <div class="content-container">
       <section class="projects-txt">
         <h1>Projects</h1>
@@ -299,7 +299,7 @@ include("header.php");
             <?= '<p class="succes">' . $succes . '</p>'; ?>
           <?php } ?>
 
-          <form id="contactform" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+          <form id="contactform" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#contact" method="POST">
             <span class="required">*</span></br>
             <label for="firstname">firstname</label>
             <input class="fields" type="text" name="firstname" placeholder="yourName">
@@ -322,15 +322,34 @@ include("header.php");
       </section>
 
       <section class="more-info">
-        <h3>Did you know?</h3>
-        <p>
-          This website is responsive!<br>
-          check it out!
-        </p>
-        <div class='qr-frame'>
-        <img id="qr" src="presentation/icons/qr-code.svg" alt="scanable qr-code">
-        <p>Scan me</p>
-        </div>
+        <?php
+        $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
+        if ($isMob) {
+        ?>
+          <h3>Prefering a more personal approach?</h3>
+          <p>
+            No problem!<br>
+            Just press the button and ...
+          </p>
+          <div class='qr-frame'>
+            <a class="call-btn" href="tel:+32494163784"><img src="presentation/icons/phone.svg" alt="telephone icon"></a>
+            <p>Give me a call!</p>
+          </div>
+        <?php
+        } else {
+        ?>
+          <h3>Did you know?</h3>
+          <p>
+            This website is responsive!<br>
+            check it out!
+          </p>
+          <div class='qr-frame'>
+            <img id="qr" src="presentation/icons/qr-code.svg" alt="scanable qr-code">
+            <p>Scan me</p>
+          </div>
+      <?php
+        }
+      ?>
       </section>
     </div>
   </div>
