@@ -227,13 +227,13 @@ include("header.php");
             <svg class="btn-arrow">
               <polygon points="0 0, 0 10, 10 5" fill="rgba(255, 255, 255, 0.836)" stroke="rgba(255, 255, 255, 0.836)" stroke-linejoin="round" />
             </svg></a>-->
-          <a class="project-btn glass" href="#">Source code
+          <a class="project-btn glass" href="https://github.com/kimberlyVH/SpellsOfNimhdora" target='_blank'>Source code
             <svg class="btn-arrow">
               <polygon points="0 0, 0 10, 10 5" fill="rgba(255, 255, 255, 0.836)" stroke="rgba(255, 255, 255, 0.836)" stroke-linejoin="round" />
             </svg>
           </a>
         </article>
-        
+
         <article class="project-block glass">
           <div class="project-img" style="--projectImg: url('../img/prulariaThumbnail.png');">
             <ul class="usedInProduction glass">
