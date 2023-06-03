@@ -1,0 +1,203 @@
+/*Presentation/general.css 
+-> stylsheet with most used layouts and standard chosen things that will be reUsed*/
+
+/*->navigation*/
+/*->footer*/
+/*->classes*/
+
+@charset "utf-8";
+@import url(normalise&fonts.css);
+/*------->normalisation and custom fonts*/
+
+/*------->layout footer*/
+
+/*---------root-------------*/
+:root {
+    /*1rem = 16px;*/
+    /*---colors---*/
+    --general-font-color: #FFFFFF;
+    --alternative-bg-color: #262936;
+    --subheader-color: #2A807E;
+    --accent-color-yellow: #EAC130;
+    --accent-color-pink: #CD76B5;
+    --accent-color-lgt-blue: #52B1B0;
+    /*---font-size---*/
+    --size-bg-header: 2.2rem;
+    --size-bg-header-desktop: 3rem;
+    --size-sm-header: 1.5rem;
+    --size-mini-header: 1rem;
+    --size-general-txt: 0.87rem;
+    --size-sm-txt: 0.87rem;
+    /*padding*/
+    --padding-txt: 2rem;
+    --padding-background: 3%;
+    --padding-topcontent-desktop: 3rem;
+    --padding-topcontent-mobile: 3rem;
+    --padding-underline: 5%;
+    /*fonts*/
+    --font-nav: monumentValley, monospace;
+    --font-q: minimalist, sans-serif;
+    --font-p: laventerfont, sans-serif;
+    --font-h: vancouver, sans-serif;
+    --font-h1: futuristic, sans-serif;
+}
+
+/*---------end root-------------*/
+
+/*---------text general items-------------*/
+p {
+    font-size: var(--size-general-txt);
+    text-align: left;
+    font-family: var(--font-p);
+
+    letter-spacing: 0.15rem;
+    color: var(--general-font-color);
+    margin-bottom: 2rem;
+
+    font-weight: lighter;
+}
+
+q {
+    font-size: var(--size-sm-header);
+    color: var(--accent-color-pink);
+    font-family: var(--font-q);
+    font-weight: lighter;
+    margin: 3rem auto 3rem auto;
+}
+
+h1 {
+    font-size: var(--size-bg-header);
+    color: var(--accent-color-yellow);
+
+    font-family: var(--font-h1);
+    flex-wrap: wrap;
+
+    margin: auto 0 5% auto;
+    font-weight: lighter;
+    font-weight: 400;
+
+    @media screen and (min-width: 900px) {
+        font-size: var(--size-bg-header-desktop);
+    }
+
+}
+
+h2 {
+    font-size: var(--size-sm-header);
+    letter-spacing: 0.20rem;
+    color: var(--accent-color-pink);
+    font-family: var(--font-nav);
+    text-align: center;
+    padding-bottom: var(--padding-underline);
+    border-bottom: 1px solid var(--general-font-color);
+    margin: 0 auto auto auto;
+}
+
+h3 {
+    font-size: var(--size-mini-header);
+    margin: 4rem auto 4rem auto;
+    text-align: center;
+    font-family: var(--font-h);
+}
+
+/*------------start general main content specs*/
+.required {
+    color: var(--accent-color-pink);
+}
+
+.background {
+    background-image: linear-gradient(-45deg, #26293686, transparent), var(--background-img-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 18/9;
+
+    @media screen and (min-width: 900px) {
+        background-image: linear-gradient(-45deg, #26293686, transparent), var(--background-img-desktop);
+        aspect-ratio: 16/9;
+    }
+}
+
+/*glassmorphisme styling for containers*/
+.glass {
+    background-color: rgba(255, 255, 255, 0.048);
+    border: 1px solid rgba (255, 255, 255, 0.4);
+    border-right: 1px solid rgba (255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba (255, 255, 255, 0.2);
+
+
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+    
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    -moz-backdrop-filter: blur(2px);
+}
+
+.glass-no-blurr {
+    background-color: rgba(255, 255, 255, 0.048);
+    border: solid 0.1rem rgba(255, 255, 255, 0.836);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+/*class for places where background needs to get blurred for backgrounds*/
+.blurr {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    -moz-backdrop-filter: blur(2px);
+}
+
+/*specs most used for container used as a single main piece in page, 
+or top page-part*/
+.page-margin {
+    margin: 30rem auto 30rem auto;
+}
+
+.scroll-page {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: fit-content;
+    padding: 12% 0 3% 0;
+    text-align: right;
+
+    @media screen and (min-width: 900px) {
+        padding: 10% 0 3% 0;
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.content-container {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 6% 1rem 6%;
+
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/*layout inputfields*/
+.fields {
+    border-radius: 20px;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    border: solid 2px var(--accent-color-pink);
+}
+
+.fields::placeholder {
+    font-family: var(--font-p);
+    font-size: var(--size-general-txt);
+}

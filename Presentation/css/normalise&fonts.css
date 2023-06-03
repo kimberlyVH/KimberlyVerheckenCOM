@@ -1,0 +1,93 @@
+/*Presentation/normalise&fonts.css
+->stylesheet with the normalisation and font implentation*/
+@charset "utf-8";
+
+/*--------normalise---------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+nav a:visited, .logospace:visited {
+  color: var(--general-font-color);
+}
+nav a:active {
+  color: var(--accent-color-pink);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+label {
+  display: none;
+}
+
+/*body and scrollbar*/
+body {
+  width: 100vw;
+  min-height: 1vh;
+  background-color: var(--alternative-bg-color);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/*->scrollbar*/
+
+/*--------end normalise---------*/
+
+
+/*---custom fonts---*/
+/*---->p-tags*/
+@font-face {
+  font-family: minimalist;
+  src: url(../fonts/Minimalist-6594618/MINIMALIST.otf) format("opentype");
+  font-weight: normal;
+}
+
+/*---->q-tags*/
+@font-face {
+  font-family: lavenderfont;
+  src: url(../fonts/Lavender-69240319/Lavender.ttf) format("truetype");
+  font-weight: normal;
+}
+
+/*---->h-tags 2 and higher*/
+@font-face {
+  font-family: vancouver;
+  src: url(../fonts/Vancouver-1831166/Vancouver.otf) format("opentype");
+  font-weight: normal;
+}
+
+/*---->h-tags*/
+@font-face {
+  font-family: futuristic;
+  src: url(../fonts/Futuristic-69037976/Futuristic\ Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+
+/*---->navigation*/
+@font-face {
+  font-family: monumentValley;
+  src: url(../fonts/monumentVally/MonumentValley12-X55o.otf) format("opentype");
+  font-weight: normal;
+}
+
+/*---end custom fonts---*/
