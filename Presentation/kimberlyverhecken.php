@@ -42,7 +42,7 @@ include("header.php");
     <!--start title-->
     <div class="openingContainer">
       <h3 id="name">Kimberly Verhecken</h3>
-      <h1 id="header-title">Full-Stack Webdeveloper</h1>
+      <h1 id="header-title">Full-Stack Webdeveloper<br><span class="sm-h1">in training</span></h1>
       <!--end title-->
       <!--
       <a href="#projects" class="home-buttons">Projects</a>
@@ -284,59 +284,6 @@ include("header.php");
   </div>
   <!--------------end projects------->
 
-  <!------------start illustrations
-  <div id="illustrations" class="scroll-page page-margin">
-    <div class="content-container">
-      <section class="illustrations-txt">
-        <h1>Illustrations</h1>
-        <div class="card-set">
-
-          <div class="card-link-combo">
-            <div class="card-fan">
-              <div id="card1" class="card"></div>
-              <div id="card2" class="card"></div>
-              <div id="card3" class="card"></div>
-            </div>
-            <a id="illustrator" href="./index.php?show=illustrator">...Illustrator
-              <svg class="arrow-link">
-                <polygon points="0 0, 0 10, 10 5" fill="rgba(255, 255, 255, 0.836)" stroke="rgba(255, 255, 255, 0.836)" stroke-linejoin="round" />
-              </svg>
-            </a>
-          </div>
-
-          <div class="card-link-combo">
-            <div class="card-fan">
-              <div id="card4" class="card"></div>
-              <div id="card5" class="card"></div>
-              <div id="card6" class="card"></div>
-            </div>
-            <a id="procreate" href="./index.php?show=procreate">...Procreate
-              <svg class="arrow-link">
-                <polygon points="0 0, 0 10, 10 5" fill="rgba(255, 255, 255, 0.836)" stroke="rgba(255, 255, 255, 0.836)" stroke-linejoin="round">
-              </svg>
-            </a>
-          </div>
-
-          <div class="card-link-combo">
-            <div class="card-fan">
-              <div id="card7" class="card"></div>
-              <div id="card8" class="card"></div>
-              <div id="card9" class="card"></div>
-            </div>
-            <a id="sketches" href="./index.php?show=sketches">...Sketches
-              <svg class="arrow-link">
-                <polygon points="0 0, 0 10, 10 5" fill="rgba(255, 255, 255, 0.836)" stroke="rgba(255, 255, 255, 0.836)" stroke-linejoin="round" />
-              </svg>
-            </a>
-          </div>
-      </section>
-    </div>
-  </div>
-  </div>
-
-
-  end illustrations------------>
-
   <!-------start contact--------->
   <div id="contact" class="scroll-page page-margin">
     <div class="content-container">
@@ -374,20 +321,16 @@ include("header.php");
         </fieldset>
       </section>
 
-      <section class="more-info glass-no-blurr">
-        <h3>Prefering a more direct approach?</h3>
+      <section class="more-info">
+        <h3>Did you know?</h3>
         <p>
-          Not a problem!
+          This website is responsive!<br>
+          check it out!
         </p>
-        <p>
-          Feel free to hit me up on:
-        <ul>
-          <li>WhatsApp +32 494/16.37.84</li>
-          <li>Facebook</li>
-          <li>Instagram</li>
-          <li>LinkedIn</li>
-        </ul>
-        </p>
+        <div class='qr-frame'>
+        <img id="qr" src="presentation/icons/qr-code.svg" alt="scanable qr-code">
+        <p>Scan me</p>
+        </div>
       </section>
     </div>
   </div>

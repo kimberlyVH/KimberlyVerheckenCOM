@@ -1,0 +1,227 @@
+
+  <!------------start illustrations
+  <div id="illustrations" class="scroll-page page-margin">
+    <div class="content-container">
+      <section class="illustrations-txt">
+        <h1>Illustrations</h1>
+        <div class="card-set">
+
+          <div class="card-link-combo">
+            <div class="card-fan">
+              <div id="card1" class="card"></div>
+              <div id="card2" class="card"></div>
+              <div id="card3" class="card"></div>
+            </div>
+            <a id="illustrator" href="./index.php?show=illustrator">...Illustrator
+              <svg class="arrow-link">
+                <polygon points="0 0, 0 10, 10 5" fill="rgba(255, 255, 255, 0.836)" stroke="rgba(255, 255, 255, 0.836)" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="card-link-combo">
+            <div class="card-fan">
+              <div id="card4" class="card"></div>
+              <div id="card5" class="card"></div>
+              <div id="card6" class="card"></div>
+            </div>
+            <a id="procreate" href="./index.php?show=procreate">...Procreate
+              <svg class="arrow-link">
+                <polygon points="0 0, 0 10, 10 5" fill="rgba(255, 255, 255, 0.836)" stroke="rgba(255, 255, 255, 0.836)" stroke-linejoin="round">
+              </svg>
+            </a>
+          </div>
+
+          <div class="card-link-combo">
+            <div class="card-fan">
+              <div id="card7" class="card"></div>
+              <div id="card8" class="card"></div>
+              <div id="card9" class="card"></div>
+            </div>
+            <a id="sketches" href="./index.php?show=sketches">...Sketches
+              <svg class="arrow-link">
+                <polygon points="0 0, 0 10, 10 5" fill="rgba(255, 255, 255, 0.836)" stroke="rgba(255, 255, 255, 0.836)" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+      </section>
+    </div>
+  </div>
+  </div>
+
+
+  end illustrations------------>
+
+
+
+  /* css
+
+  /*-------------------------------------start illustrations--------------------------------------*/
+
+.illustrations-txt {
+    width: 95%;
+    height: fit-content;
+    margin: auto;
+}
+
+#illustrations h1 {
+    width: 100%;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 3rem;
+    font-size: var(--size-sm-header)
+}
+
+.card-set {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 900px) {
+        flex-direction: row;
+    }
+}
+
+.card-fan {
+    width: 100%;
+    height: 350px;
+    display: block;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    /*height: auto;*/
+    height: 350px;
+    display: block;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+    transform-origin: center 400px;
+    transition: all 0.5s linear;
+}
+
+.card-fan :first-child {
+    transform: rotate(5deg);
+}
+
+.card-fan :nth-child(3) {
+    transform: rotate(-5deg);
+}
+
+.card-fan:hover :first-child {
+    transform: rotate(10deg);
+}
+
+.card-fan:hover :nth-child(3) {
+    transform: rotate(-10deg);
+}
+
+.card-link-combo {
+    width: 100%;
+    height: fit-content;
+    width: 70%;
+    margin: auto auto 4rem auto;
+
+    @media screen and (min-width: 900px) {
+        width: 20%;
+        margin: auto;
+    }
+}
+
+.card-link-combo a {
+    width: max-content;
+    height: fit-content;
+    display: inline-block;
+    font-size: var(--size-sm-header);
+    color: var(--general-font-color);
+    text-align: left;
+    font-family: var(--font-nav);
+    margin: 2rem auto 2rem auto;
+    position: relative;
+}
+
+.card-link-combo a::before,
+.card-link-combo a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card-link-combo a::before {
+    background-color: var(--alternative-bg-color);
+}
+
+.card-link-combo:hover :nth-child(2)::after {
+    width: 0.175rem;
+    background: var(--general-font-color);
+    animation: typewriter 4s steps(15) 1s forwards,
+        blink 750ms steps(17) infinite;
+}
+
+.card-link-combo:hover :nth-child(2)::before {
+    animation: typewriter 4s steps(15) 1s forwards;
+}
+
+.arrow-link {
+    height: 10px;
+    width: 10px;
+    margin: auto auto 0.18rem auto;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+
+
+#card1 {
+    background-color: aqua;
+}
+
+#card2 {
+    background-color: blueviolet;
+}
+
+#card3 {
+    background-color: brown;
+}
+
+#card4 {
+    background-color: yellow;
+}
+
+#card5 {
+    background-color: yellowgreen;
+}
+
+#card6 {
+    background-color: green;
+}
+
+#card7 {
+    background-color: orange;
+}
+
+#card8 {
+    background-color: orangered;
+}
+
+#card9 {
+    background-color: olivedrab;
+}
+
+/*-------------------------------------end illustrations--------------------------------------*/
