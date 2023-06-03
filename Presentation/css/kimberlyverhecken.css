@@ -713,12 +713,13 @@ input {
 textarea {
     height: 100px;
     resize: none;
+    margin-top: 1rem;
 }
 
 .send-button {
     width: 50%;
     height: 50px;
-    margin: 2rem 0 2rem auto;
+    margin: 1rem 0 1rem auto;
     border-radius: 50px;
     border: none;
     background-color: var(--accent-color-pink);
@@ -841,6 +842,9 @@ footer a {
 #footerlist2 {
     margin: 0 0 auto auto;
 }
+#footerlist2 li {
+    left: -20px;
+}
 
 #footerlist3,
 #footerlist4 {
@@ -848,9 +852,24 @@ footer a {
     margin: auto auto auto auto;
     text-align: center;
 }
-
+#footerlist4 a {
+    position: relative;
+    left: -50px;
+}
+#footerlist4 .footer-txt {
+    width: 100px;
+    top:-8px;
+    left: 30px;
+}
 footer li {
     margin: auto auto 1rem auto;
+    position: relative;
+}
+
+.footer-txt {
+    position: absolute;
+    top: 8px;
+    left: 35px;
 }
 
 /*for big screens*/
