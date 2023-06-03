@@ -233,30 +233,7 @@ include("header.php");
             </svg>
           </a>
         </article>
-
-        <article class="project-block glass">
-          <div class="project-img">
-            <ul class="usedInProduction glass">
-              <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML5 icon" /></li>
-              <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS3 icon" /></li>
-              <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP icon" /></li>
-              <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL icon" /></li>
-            </ul>
-          </div>
-          <div class="project-description">
-            <h1>Sandwich Orderservice</h1>
-            <p>A little Orderservice with register with generated password wich is send to the users email,
-              login and a menu to specify your order.</p>
-            <p>Since this was a project provided by VDAB, i'm not allowed to share my code publicly,
-              But i'll glady demonstrate it in person or invite you to my private github repo.</p>
-          </div>
-          <a class="project-btn glass" href="#contact">Contact me
-            <svg class="btn-arrow">
-              <polygon points="0 0, 0 10, 10 5" fill="rgba(255, 255, 255, 0.836)" stroke="rgba(255, 255, 255, 0.836)" stroke-linejoin="round" />
-            </svg>
-          </a>
-        </article>
-
+        
         <article class="project-block glass">
           <div class="project-img" style="--projectImg: url('../img/prulariaThumbnail.png');">
             <ul class="usedInProduction glass">
@@ -270,6 +247,29 @@ include("header.php");
             <h1>Prularia</h1>
             <p>A webshop build in team using scrum/agile workflow. Having a login/register, shoppingcart
               and a catalogue generated through connection with the provided database.</p>
+            <p>Since this was a project provided by VDAB, i'm not allowed to share my code publicly,
+              But i'll glady demonstrate it in person or invite you to my private github repo.</p>
+          </div>
+          <a class="project-btn glass" href="#contact">Contact me
+            <svg class="btn-arrow">
+              <polygon points="0 0, 0 10, 10 5" fill="rgba(255, 255, 255, 0.836)" stroke="rgba(255, 255, 255, 0.836)" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </article>
+
+        <article class="project-block glass">
+          <div class="project-img" style="--projectImg: url('../img/sandwichThumbnail.png');">
+            <ul class="usedInProduction glass">
+              <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML5 icon" /></li>
+              <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS3 icon" /></li>
+              <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP icon" /></li>
+              <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL icon" /></li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <h1>Sandwich Orderservice</h1>
+            <p>A little Orderservice with register with generated password wich is send to the users email,
+              login and a menu to specify your order.</p>
             <p>Since this was a project provided by VDAB, i'm not allowed to share my code publicly,
               But i'll glady demonstrate it in person or invite you to my private github repo.</p>
           </div>

@@ -11,7 +11,7 @@ namespace presentation;
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0" />
-    <link rel="stylesheet" href="presentation/css/kimberlyclean.css" />
+    <link rel="stylesheet" href="presentation/css/kimberlyverhecken.css" />
     <!-- language icons devicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <title>KimberlyVerhecken | Portfolio</title>
