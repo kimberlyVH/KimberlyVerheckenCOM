@@ -39,7 +39,7 @@ namespace presentation;
   <div id="footerlist3">
     <h3>Wanna get in touch?</h3>
     <ul>
-      <li><a href=”tel:320494163784”>+32 494/16.37.84</a></li>
+      <li>+32 494/16.37.84</a></li>
       <li><a href="mailto:contact@kimberlyverhecken.com">contact@kimberlyverhecken.com</a></li>
     </ul>
   </div>
