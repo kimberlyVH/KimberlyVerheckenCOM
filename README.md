@@ -41,6 +41,6 @@ Technologies used in the project:
 
 <h2>Project Screenshots:</h2>
 
-<img src="kv_projects.png" alt="project-screenshot"/>
+<img src="kvPics/kv_projects.png" alt="project-screenshot"/>
 
-<img src="kv_contact.png" alt="project-screenshot"/>
+<img src="kvPics/kv_contact.png" alt="project-screenshot"/>
