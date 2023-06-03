@@ -299,7 +299,7 @@ include("header.php");
             <?= '<p class="succes">' . $succes . '</p>'; ?>
           <?php } ?>
 
-          <form id="contactform" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#contact" method="POST">
+          <form id="contactform" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
             <span class="required">*</span></br>
             <label for="firstname">firstname</label>
             <input class="fields" type="text" name="firstname" placeholder="yourName">

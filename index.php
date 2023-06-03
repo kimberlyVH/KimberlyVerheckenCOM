@@ -74,7 +74,7 @@ if (isset($_POST["btnSend"])) {
             header("location: thankYou.php");
             exit();
         } catch (InvalidEmailAddressException $e) {
-            $error .= "Given Emailaddres is unvalid, please try again.<br>";
+            $error .= "Given Email-addres is unvalid, please try again.<br>";
         } catch (FailedEmailException $e) {
             $error .= "I'm sorry, something went wrong. Please try again later.<br>";
         }
