@@ -76,10 +76,10 @@ include("header.php");
           all while listening to my favorite podcasts.
         </p>
       </section>
-      <img id="illustration" src="presentation/art/makingLemonade.png" alt="spin-off illustration the qoute when live throws you lemons you
-      gotta make lemonade" />
+      <img class="selfie" src="presentation/img/selfie.svg" alt="picture of me">
     </div>
   </div>
+
   <!------------end about--------->
 
   <!-------------start skills------->
@@ -173,7 +173,8 @@ include("header.php");
               <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma icon" />
               <span class="list-text">Figma</span>
             </li>
-            <li>Proceate</li>
+            <!--<li><imgc class="skill-icon" src="presentation/icons/procreate.svg" alt="procreate-icon">
+            <span class="list-text">Proceate</span></li>-->
           </ul>
         </div>
       </div>
@@ -347,9 +348,9 @@ include("header.php");
             <img id="qr" src="presentation/icons/qr-code.svg" alt="scanable qr-code">
             <p>Scan me</p>
           </div>
-      <?php
+        <?php
         }
-      ?>
+        ?>
       </section>
     </div>
   </div>

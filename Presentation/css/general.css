@@ -157,7 +157,7 @@ or top page-part*/
     flex-direction: column;
 
     width: 100%;
-    height: fit-content;
+    height: 100%;
     padding: 12% 0 3% 0;
     text-align: right;
 

@@ -346,7 +346,7 @@ main {
     width: 100%;
 
     @media screen and (min-width: 900px) {
-        width: 45%;
+        width: 50%;
         margin: auto;
     }
 }
@@ -360,11 +360,12 @@ main {
     margin-top: 3rem;
 }
 
-#illustration {
+.selfie {
     width: 100%;
+    margin: auto;
 
     @media screen and (min-width: 900px) {
-        width: 45%;
+        width: 40%;
         margin: auto;
     }
 }
