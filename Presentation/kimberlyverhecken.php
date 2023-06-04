@@ -202,7 +202,7 @@ include("header.php");
             <p>This portfolio website containing a contact form with send e-mail and sends out an confirmation</p>
             <p>Layout created using own illustrations and some own socialmedia icons.</p>
           </div>
-          <a class="project-btn glass" href="https://github.com/kimberlyVH/KimberlyVerheckenCOM">Source code
+          <a class="project-btn glass" href="https://github.com/kimberlyVH/KimberlyVerheckenCOM" target="_blank">Source code
             <svg class="btn-arrow">
               <polygon points="0 0, 0 10, 10 5" fill="rgba(255, 255, 255, 0.836)" stroke="rgba(255, 255, 255, 0.836)" stroke-linejoin="round" />
             </svg>
