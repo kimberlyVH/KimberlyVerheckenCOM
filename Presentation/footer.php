@@ -56,11 +56,12 @@ namespace presentation;
     <h3>Show support and shop for some art!</h3>
     <a href="https://www.etsy.com/shop/KimmyMayhemGoods" target="_blank">
       <img class="icons" src="presentation/icons/etsy_blue.svg" alt="Etsy-icon" width="30px" height="30px" />
-      <span class="footer-txt">Visite my Etsy</span></a>
+      <span class="footer-txt">Visit my Etsy</span></a>
   </div>
 
 
 </footer>
+<script src="presentation/js/byeAnchor.js"></script>
 </body>
 
 </html>

@@ -41,5 +41,5 @@ namespace presentation;
             </ul>
         </nav>
     </header>
-    <script src="presentation/js/script.js"></script>
+    <script src="presentation/js/hamburger.js"></script>
     <!--end navigation-->
