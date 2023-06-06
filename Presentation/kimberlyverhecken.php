@@ -46,7 +46,7 @@ include("header.php");
       <!--end title-->
       <!--
       <a href="#projects" class="home-buttons">Projects</a>
-      <a href="#" class="resume-button">Resume</a>
+      <a href="presentation/resume/kimberlyverhecken_resume" class="resume-button" download>Resume</a>
       -->
     </div>
     <!--end layout header content-->
